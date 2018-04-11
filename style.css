@@ -22,8 +22,31 @@ body{
     font-family: 'Gotham-Thin';
     src: url('./gotham/Gotham-Thin.otf') format('truetype');
 }
+
 p {
     font-family: "Gotham-Thin", Verdana, Tahoma;
+    color:#666666;
+}
+
+a, a:hover, a:active{
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover{
+    color: DarkOrange;
+}
+
+.aheader{
+    font-size: 1.2em;
+}
+
+.paddingLeft{
+    padding-left: 30px;
+}
+
+.paddingRight{
+    padding-right: 30px;
 }
 
 .container {
