@@ -70,7 +70,7 @@ a:hover{
 .headimg{
     background-image: url('./images/head.png');
     background-repeat:no-repeat;
-    z-index: -1;
+
 }
 
 .pre_sale{
@@ -83,6 +83,20 @@ a:hover{
     font-style: italic;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+div.btn_yellow a:link, div.btn_yellow a:visited{
+    font-weight: bold;
+    width: 200px;
+    font-family: Gotham-BlackBook;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin: 35px;
+}
+
+div.btn_yellow a:hover, div.btn_yellow a:active {
+    background-color: DarkOrange;
+    border-color: DarkOrange;
 }
 
 #triangle-bottomleft {
@@ -158,7 +172,6 @@ a:hover{
   background-color: #e5e5e5;
 }
 
-
 /*
  * Extra utilities
  */
@@ -173,6 +186,8 @@ a:hover{
   -webkit-box-flex: 1;
   flex: 1;
 }
+
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     -ms-flex: 1;
