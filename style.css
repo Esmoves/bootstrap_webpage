@@ -3,6 +3,11 @@ body{
     font-family: Gotham-thin;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 @font-face {
     font-family: 'Gotham-Black';
     src: url('./gotham/Gotham-Black.otf') format('truetype');
@@ -21,6 +26,19 @@ body{
 @font-face {
     font-family: 'Gotham-Thin';
     src: url('./gotham/Gotham-Thin.otf') format('truetype');
+}
+
+.black{
+    font-family: Gotham-BlackBook;
+}
+.bold{
+    font-family: Gotham-Bold;
+}
+.book{
+    font-family: Gotham-Book;
+}
+.thin{
+    font-family: Gotham-Thin;
 }
 
 p {
@@ -49,29 +67,31 @@ a:hover{
     padding-right: 30px;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .headimg{
     background-image: url('./images/head.png');
     background-repeat:no-repeat;
+    z-index: -1;
 }
 
-.black{
-    font-family: Gotham-BlackBook;
-}
-.bold{
-    font-family: Gotham-Bold;
-}
-.book{
-    font-family: Gotham-Book;
-}
-.thin{
-    font-family: Gotham-Thin;
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid white;
+	border-right: 470px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid white;
+	border-left: 470px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 /*
  * Custom translucent site header
