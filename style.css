@@ -70,6 +70,31 @@ a:hover{
 .headimg{
     background-image: url('./images/head.png');
     background-repeat:no-repeat;
+}
+
+.round_P{
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.round_P p{
+    color: #666;
+    font-size: 3em;
+    font-family: Gotham-Bold;
+    margin-top: 25%;
+    text-align: center;
+}
 
 }
 
