@@ -1,13 +1,17 @@
-body{
+html {
+    min-height:100%;
+    position:relative;
+}
+
+body {
     color: #666666;
     font-family: Gotham-thin;
+    height: 100%;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
+/*
+ * set the font for the website
+ */
 @font-face {
     font-family: 'Gotham-Black';
     src: url('./gotham/Gotham-Black.otf') format('truetype');
@@ -28,51 +32,88 @@ body{
     src: url('./gotham/Gotham-Thin.otf') format('truetype');
 }
 
-.black{
+.black {
     font-family: Gotham-BlackBook;
 }
-.bold{
+.bold {
     font-family: Gotham-Bold;
 }
-.book{
+.book {
     font-family: Gotham-Book;
 }
-.thin{
+.thin {
     font-family: Gotham-Thin;
 }
+
+/*
+ * override some of the default bootstrap elements styles
+ */
 
 p {
     font-family: "Gotham-Thin", Verdana, Tahoma;
     color:#666666;
 }
 
-a, a:hover, a:active{
+a, a:hover, a:active {
     color: #666666;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: DarkOrange;
 }
 
-.aheader{
+/*
+ * Set up the page
+ */
+.container {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 962px;
+    min-height: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    padding-bottom:100px;   /* Height of the footer */
+}
+
+.content {
+    position: relative;
+    margin-top: 20px;
+    width: 962px;
+    min-height: 100%;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+/*
+ * top menu
+ */
+ nav {
+    width: 962px;
+    height: 40px;
+    margin: 0 auto;
+ }
+.aheader {
     font-size: 1.2em;
+    padding: 0 30px;
 }
 
-.paddingLeft{
-    padding-left: 30px;
-}
+/*
+ * Set up the layout of the first big background picture in the landingspage
+ */
+ div.header_container {
+     display: block;
+     width: 962px;
+     height: 576px;
+     z-index: -1;
+     background-image: url('./images/head.png');
+     background-repeat:no-repeat;
+ }
 
-.paddingRight{
-    padding-right: 30px;
-}
-
-.headimg{
-    background-image: url('./images/head.png');
-    background-repeat:no-repeat;
-}
-
-.round_P{
+.round_P {
 	width: 100px;
 	height: 100px;
 	-moz-border-radius: 50px;
@@ -80,7 +121,7 @@ a:hover{
     border-radius: 50px;
     background-color: white;
     position: absolute;
-    top: 15px;
+    top: -10px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -88,29 +129,32 @@ a:hover{
     z-index: 2;
 }
 
-.round_P p{
+.round_P p {
     color: #666;
-    font-size: 3em;
-    font-family: Gotham-Bold;
-    margin-top: 25%;
+    font-size: 3.5em;
+    font-family: Gotham-BlackBook;
+    font-weight: bold;
+    margin-top: 15%;
     text-align: center;
 }
 
-}
-
-.pre_sale{
+.pre_sale {
     font-variant: small-caps;
-    padding-top: 20%;
+    padding-top: 85px;
     font-size: 4.5em;
 }
 
-.sub_titel{
+.sub_titel {
     font-style: italic;
     font-weight: bold;
     font-size: 1.5em;
 }
 
-div.btn_yellow a:link, div.btn_yellow a:visited{
+ul.btn_yellow li {
+     display: inline-block;
+}
+
+ul.btn_yellow a:link, ul.btn_yellow a:visited {
     font-weight: bold;
     width: 200px;
     font-family: Gotham-BlackBook;
@@ -119,7 +163,7 @@ div.btn_yellow a:link, div.btn_yellow a:visited{
     margin: 35px;
 }
 
-div.btn_yellow a:hover, div.btn_yellow a:active {
+ul.btn_yellow a:hover, ul.btn_yellow a:active {
     background-color: DarkOrange;
     border-color: DarkOrange;
 }
@@ -128,74 +172,59 @@ div.btn_yellow a:hover, div.btn_yellow a:active {
 	width: 0;
 	height: 0;
 	border-bottom: 100px solid white;
-	border-right: 470px solid transparent;
+	border-right: 481px solid transparent;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 517px;
+    z-index: 2px;
 }
 
 #triangle-bottomright {
 	width: 0;
 	height: 0;
 	border-bottom: 100px solid white;
-	border-left: 470px solid transparent;
+	border-left: 481px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 517px;
+}
+
+/*
+ * Set up layout for the three main buttons under the first big image in the landignspage
+ */
+div.mainbtn {
+    position: absolute;
+    top:680px;
+    width: 960px;
+    height: 400px;
+    padding-left: 30px;
+    text-align: center;
+    border: 1px solid DarkOrange;
+}
+
+.btncard {
+    float: left;
+}
+
+.mainbtn img {
+    width: 250px;
+    margin:10px;
+}
+
+/*
+ * footer
+ */
+ footer {
+    display: block;
+    width: 100%;
+    height: 40px;
     position: absolute;
     right: 0;
     bottom: 0;
-}
+    left: 0;
+ }
 
-/*
- * Custom translucent site header
- */
 
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #999;
-  transition: ease-in-out color .15s;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-}
-
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
 
 /*
  * Extra utilities
