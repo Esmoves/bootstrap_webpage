@@ -85,7 +85,6 @@ a:hover {
     width: 962px;
     min-height: 100%;
     display: block;
-    border-bottom: 1px solid black;
 }
 
 /*
@@ -193,13 +192,15 @@ ul.btn_yellow a:hover, ul.btn_yellow a:active {
  * Set up layout for the three main buttons under the first big image in the landignspage
  */
 div.mainbtn {
-    position: absolute;
-    top:680px;
-    width: 960px;
-    height: 400px;
-    padding-left: 30px;
+    position: relative;
+    width: 860px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
     text-align: center;
-    border: 1px solid DarkOrange;
+    color: #666;
+    border-bottom: 1px solid black;
 }
 
 .btncard {
@@ -207,21 +208,51 @@ div.mainbtn {
 }
 
 .mainbtn img {
-    width: 250px;
+    width: 200px;
     margin:10px;
+}
+
+/*
+ * third part of the page: two columns, left a text and right a picute
+ */
+.about {
+    padding-top: 30px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.about h2 {
+    color: DarkOrange;
+    font-variant: small-caps;
+    font-family: 'Gotham-Black';
+    font-size: 2em;
+}
+
+.btn_invert a:link, .btn_invert a:visited {
+    background-color: DarkOrange;
+    border-color: DarkOrange;
+    font-weight: bold;
+    width: 200px;
+    font-family: Gotham-BlackBook;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn_invert a:hover, .btn_invert a:active {
+    background-color: white;
+    border-color: #666;
+    color: #666;
 }
 
 /*
  * footer
  */
  footer {
-    display: block;
     width: 100%;
-    height: 40px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: 100px;
+    position: relative;
+    padding-top: 30px;
  }
 
 
