@@ -48,6 +48,12 @@ body {
 /*
  * override some of the default bootstrap elements styles
  */
+ h2 {
+     color: DarkOrange;
+     font-variant: small-caps;
+     font-family: 'Gotham-Black';
+     font-size: 2em;
+ }
 
 p {
     font-family: "Gotham-Thin", Verdana, Tahoma;
@@ -223,20 +229,13 @@ div.mainbtn {
     overflow: hidden;
 }
 
-.about h2 {
-    color: DarkOrange;
-    font-variant: small-caps;
-    font-family: 'Gotham-Black';
-    font-size: 2em;
-}
-
 .btn_invert a:link, .btn_invert a:visited {
     background-color: DarkOrange;
     border-color: DarkOrange;
     font-weight: bold;
     width: 200px;
     font-family: Gotham-BlackBook;
-    font-size: 1.2em;
+    font-size: 1.5em;
     border-radius: 10px;
     color: white;
 }
@@ -248,17 +247,31 @@ div.mainbtn {
 }
 
 /*
- * Fourth part, a transparent break under the picture of the third part
+ * Break; a transparent break under the picture of the third part
  */
  .white_left {
-     width: 545px;
- }
-.gradient_break {
-    width: 430px;
-    height: 60px;
-
-    background: linear-gradient(#666666, white);
+    width: 545px;
 }
+.gradient_break {
+   width: 430px;
+   height: 60px;
+   margin-right: -17px;
+   background: linear-gradient(#999, white);
+}
+
+/*
+ * Fourth part. A dark col on the left and a picture on the border-right
+ */
+ .dark {
+    margin-top: 100px;
+    background-color: #666;
+    font-size: 0.8em;
+ }
+
+ .dark p {
+    color: white;
+ }
+
 
 
 
@@ -299,4 +312,9 @@ div.mainbtn {
   }
 }
 
-.overflow-hidden { overflow: hidden; }
+@media (max-width: 480px) {
+    .container {
+    margin-left: 0;
+    width: 100%;
+    }
+}
