@@ -291,9 +291,10 @@ div.mainbtn {
     font-size: 1em;
  }
 
-.col_yellow {
-    margin: 20px;
-    background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 50%,#f6f6f6 50%,#f6f6f6 100%);
+.col_basic{
+    margin: 10%;
+    padding:20px;
+    background: linear-gradient(to bottom,  DarkOrange 0%,DarkOrange 50%,#f6f6f6 50%,#f6f6f6 100%);
 }
 
 .col_grey {
