@@ -50,8 +50,8 @@ body {
  */
 hr {
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
     margin-left: 5%;
     margin-right: 5%;
     border-style: solid;
@@ -282,7 +282,23 @@ div.mainbtn {
  }
 
 
+/*
+ * fifth part: a yellow column with text and buttons and a grey column with text and buttons
+ */
+ .floating_titel {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+ }
 
+.col_yellow {
+    margin: 20px;
+    background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 50%,#f6f6f6 50%,#f6f6f6 100%);
+}
+
+.col_grey {
+    background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 50%,#f6f6f6 50%,#f6f6f6 100%);
+}
 
 
 /*
