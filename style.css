@@ -48,6 +48,16 @@ body {
 /*
  * override some of the default bootstrap elements styles
  */
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-width: 1px;
+}
+
  h2 {
      color: DarkOrange;
      font-variant: small-caps;
@@ -206,7 +216,6 @@ div.mainbtn {
     margin: 0 auto;
     text-align: center;
     color: #666;
-    border-bottom: 1px solid black;
 }
 
 .btncard {
