@@ -302,27 +302,32 @@ div.mainbtn {
     background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 180px,#f6f6f6 180px,#f6f6f6 100%);
 }
 
-.round_btn_yellow_outer {
+.round_btn_outer {
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 25%;
-    width:70px;
-    height:70px;
-    border:70px solid transparent;
+    width:80px;
+    height:80px;
+    border:80px solid transparent;
     border-top-color: Yellow;
     border-right-color: Yellow;
     border-radius:50%;
     transform:rotate(-45deg);
 }
 
-.round_btn_yellow_inner {
+.round_grey {
+    border-top-color: #666;
+    border-right-color: #666;
+}
+
+.round_btn_inner {
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: 25%;
-    width:60px;
-    height:60px;
+    width:70px;
+    height:70px;
     margin-left: 10px;
-    border:60px solid transparent;
+    border:70px solid transparent;
     border-top-color:white;
     border-right-color:white;
     border-radius:50%;
@@ -336,14 +341,14 @@ div.mainbtn {
 }
 
 .col_basic p {
-    margin-top: 250px;
+    margin-top: 200px;
     padding: 20px;
 }
 
 .col_basic div.prize {
     position: absolute;
     top:160px;
-    left: 110px;
+    left: 120px;
     margin-top:0;
     font-size: 1.5em;
     font-weight: bold;
