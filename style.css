@@ -295,16 +295,16 @@ div.mainbtn {
     margin: 10%;
     padding:30px;
     height: 500px;
-    background: linear-gradient(to bottom,  DarkOrange 0%,DarkOrange 50%,#f6f6f6 50%,#f6f6f6 100%);
+    background: linear-gradient(to bottom,  DarkOrange 0%,DarkOrange 180px,#f6f6f6 180px,#f6f6f6 100%);
 }
 
 .col_grey {
-    background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 50%,#f6f6f6 50%,#f6f6f6 100%);
+    background: linear-gradient(to bottom,  #9c9e9f 0%,#9c9e9f 180px,#f6f6f6 180px,#f6f6f6 100%);
 }
 
 .round_btn_yellow_outer {
     position: absolute;
-    top: 181px;
+    top: 110px;
     left: 25%;
     width:70px;
     height:70px;
@@ -317,7 +317,7 @@ div.mainbtn {
 
 .round_btn_yellow_inner {
     position: absolute;
-    top: 192px;
+    top: 120px;
     left: 25%;
     width:60px;
     height:60px;
@@ -329,6 +329,25 @@ div.mainbtn {
     transform:rotate(-45deg);
 }
 
+.col_basic h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.col_basic p {
+    margin-top: 250px;
+    padding: 20px;
+}
+
+.col_basic div.prize {
+    position: absolute;
+    top:160px;
+    left: 110px;
+    margin-top:0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 /*
  * footer
  */
